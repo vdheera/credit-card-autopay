@@ -19,7 +19,7 @@ I did not push those files to this repo as they did contain bank_id's and routin
 
 # TECHNICAL OVERVIEW
 
-There are 3 main files. I'll go in the order that they're executed in a user flow. 
+There are 3 main files. They can be found under 'autopay-backend'. I'll go in the order that they're executed in a user flow. 
 
 1. setup_autopay.py: This is responsible for linking the user's credit card & bank_account from which they'll pay their bill. Uses Plaid to connect with a user's financial institutions. A few key notes here: since this is a POC, KYC has not been implemented -- I don't collect information about the 'user'. Each 'user' in this case is a unique credit card. 
 I connect with Plaid to get information about the credit card & then save to 'creditcard.csv' information about the credit card (it's corresponsing bank's mailing address -> using Column's API to get this). 
