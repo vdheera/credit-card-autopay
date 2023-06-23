@@ -1,0 +1,15 @@
+# Git does not track these files
+
+# Environment variables
+.env
+
+# Python virtual environment
+env/
+
+# Node modules
+```
+node_modules/
+```
+
+*.csv
+
